@@ -8,8 +8,8 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
-			"NSFW",
+		"nsfw": [
+			"nsfw",
 			"Cette planche autorise du contenu qui n'est pas recommandé dans un environnement de travail"
 		],
 		"alwaysLock": [
@@ -72,7 +72,7 @@
 			"CSS personnalisé",
 			"Active la feuille de style personnalisée"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"Thème",
 			"Thème à charger par défaut si l'utilisateur n'en a sélectionné aucun"
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"Recheche d'image desustorage.org"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"Bloquer les robots",
 			"Empêche les robots d'exploration d'accéder à la planche"
 		],
@@ -140,7 +140,7 @@
 			"Drapeau",
 			"Affiche le drapeau du pays de l'utilisateur"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"Anonymat forcé",
 			"Désactive les informations personnelles des publications"
 		],
@@ -308,11 +308,11 @@
 			"Slut enabler",
 			"Pose pas de questions"
 		],
-		"rbText": [
+		"rb_text": [
 			"Red/Blue Text",
 			"Affiche du texte en rouge ou en bleu si balisé avec '^r' ou '^b'"
 		],
-		"readOnly": [
+		"read_only": [
 			"Lecture seule",
 			"Désactive la création de nouveaux messages"
 		],
@@ -364,7 +364,7 @@
 			"Grade",
 			"Affiche votre grade dans l'en-tête du message"
 		],
-		"textOnly": [
+		"text_only": [
 			"Texte seul",
 			"Désactive le téléversement de fichiers"
 		],

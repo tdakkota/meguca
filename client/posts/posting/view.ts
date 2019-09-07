@@ -48,7 +48,7 @@ export default class FormView extends PostView {
         })
         this.updateDoneButton();
 
-        if (!boardConfig.textOnly) {
+        if (!boardConfig.text_only) {
             this.upload = new UploadForm(this.model,
                 this.el.querySelector(".upload-container"));
         }

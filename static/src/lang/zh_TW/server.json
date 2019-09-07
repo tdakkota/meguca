@@ -8,7 +8,7 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
+		"nsfw": [
 			"Not Safe For Work",
 			"允許成人內容的看板"
 		],
@@ -72,7 +72,7 @@
 			"自定義 CSS",
 			"切換自定義 CSS 的使用"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"預設主題",
 			"預設情況下加載的主題，當客戶端沒有設置時"
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"desustorage.org 圖片搜尋"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"防止爬蟲",
 			"防止自動網站抓取工具（如搜尋引擎索引器）訪問此看板。"
 		],
@@ -140,7 +140,7 @@
 			"國旗",
 			"顯示發文者的國旗在貼文上"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"強制匿名",
 			"禁用貼文上的用戶名、tripcodes 和電子郵件"
 		],
@@ -312,11 +312,11 @@
 			"蕩婦啟動器",
 			"不要問"
 		],
-		"rbText": [
+		"rb_text": [
 			"紅/藍 文字",
 			"顯示紅和藍的文字如果該文字用 '^r' 或 '^b' 格式化"
 		],
-		"readOnly": [
+		"read_only": [
 			"唯讀",
 			"關閉貼文建立"
 		],
@@ -368,7 +368,7 @@
 			"板務職位",
 			"在貼文標題中顯示你的板務職位"
 		],
-		"textOnly": [
+		"text_only": [
 			"僅限文字",
 			"關閉檔案上傳"
 		],

@@ -35,7 +35,7 @@ type Public struct {
 	ThreadExpiryMax   uint              `json:"threadExpiryMax"`
 	MaxSize           uint              `json:"maxSize"`
 	DefaultLang       string            `json:"defaultLang"`
-	DefaultCSS        string            `json:"defaultCSS"`
+	DefaultCSS        string            `json:"default_css"`
 	ImageRootOverride string            `json:"imageRootOverride"`
 	Links             map[string]string `json:"links"`
 }
@@ -43,21 +43,21 @@ type Public struct {
 // BoardConfigs stores board-specific configuration
 type BoardConfigs struct {
 	BoardPublic
-	DisableRobots bool     `json:"disableRobots"`
+	DisableRobots bool     `json:"disable_robots"`
 	ID            string   `json:"id"`
 	Eightball     []string `json:"eightball"`
 }
 
 // BoardPublic contains publically accessible board-specific configurations
 type BoardPublic struct {
-	ReadOnly   bool `json:"readOnly"`
-	TextOnly   bool `json:"textOnly"`
-	ForcedAnon bool `json:"forcedAnon"`
-	Flags      bool `json:"flags"`
-	NSFW       bool
-	RbText     bool   `json:"rbText"`
+	ReadOnly   bool   `json:"read_only"`
+	TextOnly   bool   `json:"text_only"`
+	ForcedAnon bool   `json:"forced_anon"`
+	Flags      bool   `json:"flags"`
+	NSFW       bool   `json:"nsfw"`
+	RbText     bool   `json:"rb_text"`
 	Pyu        bool   `json:"pyu"`
-	DefaultCSS string `json:"defaultCSS"`
+	DefaultCSS string `json:"default_css"`
 	Title      string `json:"title"`
 	Notice     string `json:"notice"`
 	Rules      string `json:"rules"`

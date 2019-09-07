@@ -8,7 +8,7 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
+		"nsfw": [
 			"Niet veilig voor werk",
 			"Bord staat materiaal toe dat niet veilig is om te worden bekeken in een werkomgeving"
 		],
@@ -72,7 +72,7 @@
 			"Custom CSS",
 			"Toggle use of custom CSS"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"Standaard thema",
 			"Thema dat standaard wordt geladen, wanneer er geen is ingesteld door de client"
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"desustorage.org afbeelding zoeken"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"Crawlers voorkomen",
 			"Voorkomen dat geautomatiseerde website-crawlers, zoals indexeerders voor zoekmachines, toegang krijgen tot dit forum."
 		],
@@ -140,7 +140,7 @@
 			"Landen vlaggen",
 			"Toon poster land vlaggen op berichten"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"Geforceerd Anoniem",
 			"Schakel gebruikersnamen, tripcodes en e-mails op berichten uit"
 		],
@@ -308,11 +308,11 @@
 			"Slet enabler",
 			"Vraag niet"
 		],
-		"rbText": [
+		"rb_text": [
 			"Red/Blue Text",
 			"Rode en blauwe tekst weergeven als deze is opgemaakt met '^r' of '^b'"
 		],
-		"readOnly": [
+		"read_only": [
 			"Alleen lezen",
 			"Schakel het maken van berichten uit"
 		],
@@ -364,7 +364,7 @@
 			"Staff Titel",
 			"Toon de titel van uw personeel in de berichtkop"
 		],
-		"textOnly": [
+		"text_only": [
 			"Text alleen",
 			"Disable bestanden uploads"
 		],

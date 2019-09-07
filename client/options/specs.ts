@@ -145,7 +145,7 @@ export const specs: { [id: string]: OptionSpec } = {
 	theme: {
 		type: optionType.menu,
 		get default() {
-			return config.defaultCSS
+			return config.default_css
 		},
 		noExecOnStart: true,
 		exec(theme: string) {

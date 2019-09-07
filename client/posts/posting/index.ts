@@ -174,7 +174,7 @@ function quotePost(e: MouseEvent) {
 
 // Update the draft post's fields on identity change, if any
 function updateIdentity() {
-	if (postSM.state === postState.draft && !state.boardConfig.forcedAnon) {
+	if (postSM.state === postState.draft && !state.boardConfig.forced_anon) {
 		postForm.renderIdentity()
 	}
 }

@@ -8,7 +8,7 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
+		"nsfw": [
 			"Not Safe For Work",
 			"Board allows material, that are not safe to be viewed in a work environment"
 		],
@@ -72,7 +72,7 @@
 			"Пользовательский CSS",
 			"Активировать пользовательский CSS"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"Тема по умолчанию",
 			"Используемая по умолчанию тема"
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"desustorage.org поиск по картинкам"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"Блокировать роботов",
 			"Запретить ботам и поисковым роботам доступ к доске"
 		],
@@ -140,7 +140,7 @@
 			"Country flags",
 			"Display poster country flags on posts"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"Форсированная анонимность",
 			"Отключить имена, трипкоды и почту у постов"
 		],
@@ -308,11 +308,11 @@
 			"Slut enabler",
 			"Don't ask"
 		],
-		"rbText": [
+		"rb_text": [
 			"Red/Blue Text",
 			"Display red and blue text if formatted with '^r' or '^b'"
 		],
-		"readOnly": [
+		"read_only": [
 			"Только чтение",
 			"Запретить отправку постов"
 		],
@@ -364,7 +364,7 @@
 			"Метка модератора",
 			"Отображать модераторский статус в посте"
 		],
-		"textOnly": [
+		"text_only": [
 			"Только текст",
 			"Запретить загрузку файлов"
 		],

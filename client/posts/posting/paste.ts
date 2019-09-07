@@ -72,7 +72,7 @@ function onPaste(e: ClipboardEvent) {
 	}
 
 	if (files.length === 1) {
-		if (boardConfig.textOnly) {
+		if (boardConfig.text_only) {
 			return
 		}
 

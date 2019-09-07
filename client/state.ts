@@ -15,17 +15,17 @@ interface Configs {
 	threadExpiryMax: number
 	maxSize: number
 	defaultLang: string
-	defaultCSS: string
+	default_css: string
 	imageRootOverride: string
 	links: { [key: string]: string }
 }
 
 // Board-specific configurations
 export interface BoardConfigs {
-	readOnly: boolean
-	textOnly: boolean
-	forcedAnon: boolean
-	rbText: boolean
+	read_only: boolean
+	text_only: boolean
+	forced_anon: boolean
+	rb_text: boolean
 	pyu: boolean
 	title: string
 	notice: string
@@ -145,33 +145,33 @@ function receive(channel: string, store: Set<number>) {
 
 // batch ids and send at most every 200ms to avoid spamming broadcasts
 const batchedPropagateSeenPost = timedAggregate<number>(propagate.bind(null, "seenPost"));
-const batchedStoreSeenPost = timedAggregate<{id: number, op: number}>(storeID.bind(null, "seenPost", tenDays));
+const batchedStoreSeenPost = timedAggregate<{ id: number, op: number }>(storeID.bind(null, "seenPost", tenDays));
 
 // Store the ID of a post this client created
 export function storeMine(id: number, op: number) {
 	mine.add(id);
 	propagate("mine", id);
-	storeID("mine", tenDays, {id, op});
+	storeID("mine", tenDays, { id, op });
 }
 
 // Store the ID of a post that replied to one of the user's posts
 export function storeSeenReply(id: number, op: number) {
 	seenReplies.add(id);
 	propagate("seen", id);
-	storeID("seen", tenDays, {id, op});
+	storeID("seen", tenDays, { id, op });
 }
 
 export function storeSeenPost(id: number, op: number) {
 	seenPosts.add(id);
 	batchedPropagateSeenPost(id);
-	batchedStoreSeenPost({id, op});
+	batchedStoreSeenPost({ id, op });
 }
 
 // Store the ID of a post or thread to hide
 export function storeHidden(id: number, op: number) {
 	hidden.add(id);
 	propagate("hidden", id);
-	storeID("hidden", tenDays * 3 * 6, {id, op});
+	storeID("hidden", tenDays * 3 * 6, { id, op });
 }
 
 export function setBoardConfig(c: BoardConfigs) {

@@ -18,7 +18,7 @@ async function onDrop(e: DragEvent) {
 	e.stopPropagation();
 	e.preventDefault();
 
-	if (boardConfig.textOnly) {
+	if (boardConfig.text_only) {
 		return;
 	}
 

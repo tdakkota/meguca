@@ -8,7 +8,7 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
+		"nsfw": [
 			"Nevhodné do práce",
 			"Doska povoľuje materiál, ktorý nie je bezpečné prezerať v pracovnom prostredí"
 		],
@@ -72,7 +72,7 @@
 			"Vlastné CSS",
 			"Prepni používanie vlastného CSS"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"Východzia téma",
 			"Téma ktorú načítať, keď klient žiadnú nezvolil"
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"desustorage.org image search"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"Zakáž webcrawlerov",
 			"Prevent automated website crawlers, such as search engine indexers, from accessing this board."
 		],
@@ -140,7 +140,7 @@
 			"Krijnovlajočky",
 			"Zobraz vlajočku krajiny plagáta"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"Vynútená anonymita",
 			"Zruš uživateľské mená, výletokódy a emaily v plagátoch"
 		],
@@ -308,11 +308,11 @@
 			"Slut enabler",
 			"Don't ask"
 		],
-		"rbText": [
+		"rb_text": [
 			"Red/Blue Text",
 			"Display red and blue text if formatted with '^r' or '^b'"
 		],
-		"readOnly": [
+		"read_only": [
 			"Len na čítanie",
 			"Zakázať prispievanie"
 		],
@@ -364,7 +364,7 @@
 			"Názov role",
 			"Zobrazí tvoju rolu v hlavičke plagátu"
 		],
-		"textOnly": [
+		"text_only": [
 			"Len text",
 			"Zakázať odosielanie súborov"
 		],

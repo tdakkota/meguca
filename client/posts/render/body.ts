@@ -253,7 +253,7 @@ function parseReds(
 ): string {
     const _fn = (frag: string) =>
         parseBlues(frag, state, fn)
-    const _rbText = boardConfig.rbText ? () => {
+    const _rbText = boardConfig.rb_text ? () => {
         const wrapped = wrapTags(3, state)
         state.red = !state.red
         return wrapped
@@ -280,7 +280,7 @@ function parseBlues(
     state: TextState,
     fn: (frag: string) => string,
 ): string {
-    const _rbText = boardConfig.rbText ? () => {
+    const _rbText = boardConfig.rb_text ? () => {
         const wrapped = wrapTags(4, state)
         state.blue = !state.blue
         return wrapped

@@ -24,7 +24,7 @@ var (
 	sageSpec         = inputSpec{ID: "sage"}
 	staffTitleSpec   = inputSpec{ID: "staffTitle"}
 	defaultThemeSpec = inputSpec{
-		ID:      "defaultCSS",
+		ID:      "default_css",
 		Type:    _select,
 		Options: common.Themes,
 	}
@@ -97,13 +97,13 @@ var specs = map[string][]inputSpec{
 		repeatPasswordSpec,
 	},
 	"configureBoard": {
-		{ID: "readOnly"},
-		{ID: "textOnly"},
-		{ID: "forcedAnon"},
-		{ID: "disableRobots"},
+		{ID: "read_only"},
+		{ID: "text_only"},
+		{ID: "forced_anon"},
+		{ID: "disable_robots"},
 		{ID: "flags"},
-		{ID: "NSFW"},
-		{ID: "rbText"},
+		{ID: "nsfw"},
+		{ID: "rb_text"},
 		{Type: _hr},
 		{ID: "pyu"},
 		{

@@ -8,7 +8,7 @@
 			"JPEG thumbnails",
 			"meguca uses WebP thumbnails by default. Enable this, if you want to support older browsers, Safari or Apple devices at the expense of no thumbnail transparency."
 		],
-		"NSFW": [
+		"nsfw": [
 			"Not Safe For Work",
 			"Board allows material, that are not safe to be viewed in a work environment"
 		],
@@ -72,7 +72,7 @@
 			"Custom CSS",
 			"Toggle use of custom CSS"
 		],
-		"defaultCSS": [
+		"default_css": [
 			"Дефолтна тема",
 			"Тема що завантажується по дефолту, коли в користувача не вказано свою."
 		],
@@ -84,7 +84,7 @@
 			"DesuStorage",
 			"Пошук зображень по desustorage.org"
 		],
-		"disableRobots": [
+		"disable_robots": [
 			"Prevent crawlers",
 			"Prevent automated website crawlers, such as search engine indexers, from accessing this board."
 		],
@@ -140,7 +140,7 @@
 			"Country flags",
 			"Display poster country flags on posts"
 		],
-		"forcedAnon": [
+		"forced_anon": [
 			"Насильно Анонімно",
 			"Вимикає імя користувачів, тріпкоди та емейли для постах"
 		],
@@ -308,11 +308,11 @@
 			"Slut enabler",
 			"Don't ask"
 		],
-		"rbText": [
+		"rb_text": [
 			"Red/Blue Text",
 			"Display red and blue text if formatted with '^r' or '^b'"
 		],
-		"readOnly": [
+		"read_only": [
 			"Лише читати",
 			"Вимикає створення постів"
 		],
@@ -364,7 +364,7 @@
 			"Staff Title",
 			"Display your staff title in the post header"
 		],
-		"textOnly": [
+		"text_only": [
 			"Лише текст",
 			"Вимикає завантаження файлів користувачами"
 		],
