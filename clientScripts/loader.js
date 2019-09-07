@@ -15,7 +15,7 @@
 	}
 
 	// Display mature content warning
-	if (!isBot && !localStorage.getItem("termsAccepted")) {
+	if (!isBot && config.mature && !localStorage.getItem("termsAccepted")) {
 		var confirmText =
 			"To access this website you understand and agree to the following:\n\n" +
 			"1. The content of this website is for mature audiences only and may not be suitable for minors. If you are a minor or it is illegal for you to access mature images and language, do not proceed.\n\n" +
@@ -37,66 +37,6 @@
 		return;
 	}
 
-	var scriptCount = 0,
-		polyfills = [];
-
-	var DOMUpToDate = true,
-		DOMMethods = [
-			// DOM level 4 methods
-			'Element.prototype.remove',
-			'Element.prototype.contains',
-			'Element.prototype.matches',
-			'Element.prototype.after',
-			'Element.prototype.before',
-			'Element.prototype.append',
-			'Element.prototype.prepend',
-			'Element.prototype.replaceWith',
-
-			// DOM level 3 query methods
-			'Element.prototype.querySelector',
-			'Element.prototype.querySelectorAll'
-		];
-
-	for (i = 0; i < DOMMethods.length; i++) {
-		if (!checkFunction(DOMMethods[i])) {
-			DOMUpToDate = false;
-			break;
-		}
-	}
-
-	// Check event listener option support
-	if (DOMUpToDate) {
-		var s = "var a = document.createElement(\"a\");" +
-			"var ctr = 0;" +
-			"a.addEventListener(\"click\", () => ctr++, {once: true});" +
-			"a.click(); a.click();" +
-			"return ctr === 1;";
-		DOMUpToDate = check(s);
-	}
-
-	if (!DOMUpToDate) {
-		polyfills.push('js/vendor/dom4');
-	}
-
-	// Stdlib functions and methods
-	var stdlibTests = [
-		"Set",
-		"Map",
-		'Promise',
-		"Symbol",
-		"Array.from",
-		'Array.prototype.includes',
-		"String.prototype.includes",
-		"String.prototype.repeat"
-	];
-
-	for (i = 0; i < stdlibTests.length; i++) {
-		if (!checkFunction(stdlibTests[i])) {
-			polyfills.push("js/vendor/core.min");
-			break;
-		}
-	}
-
 	// Remove prefixes on Web Crypto API for Safari
 	if (!checkFunction("window.crypto.subtle.digest")) {
 		window.crypto.subtle = window.crypto.webkitSubtle;
@@ -106,26 +46,7 @@
 	// var wasm = /[\?&]wasm=true/.test(location.search);
 
 	var head = document.getElementsByTagName('head')[0];
-
-	if (polyfills.length) {
-		for (i = 0; i < polyfills.length; i++) {
-			scriptCount++;
-			loadScript(polyfills[i]).onload = checkAllLoaded;
-		}
-	} else {
-		loadClient();
-	}
-
-	// Check for browser compatibility by trying to detect some ES6 features
-	function check(func) {
-		try {
-			// Using `eval` can expose this code to injection attacks
-			// and creates a new instance of the javascript interpreter (W061)
-			return eval('(function(){' + func + '})()');
-		} catch (e) {
-			return false;
-		}
-	}
+	loadClient();
 
 	// Check if a browser API function is defined
 	function checkFunction(func) {
@@ -134,14 +55,6 @@
 			return typeof eval(func) === 'function';
 		} catch (e) {
 			return false;
-		}
-	}
-
-	function checkAllLoaded() {
-		// This function might be called multiple times. Only load the client,
-		// when all polyfills are loaded.
-		if (--scriptCount === 0) {
-			loadClient();
 		}
 	}
 

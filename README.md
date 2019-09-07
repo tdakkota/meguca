@@ -2,7 +2,8 @@
 [![Build Status](https://travis-ci.org/bakape/meguca.svg?branch=master)](https://travis-ci.org/bakape/meguca)
 
 # meguca
-anonymous realtime imageboard focused on high performance, free speech and transparent moderation
+anonymous realtime imageboard with user-created boards focused on high
+performance, free speech and transparent moderation
 
 Platforms: Linux, Docker
 
@@ -15,7 +16,20 @@ License: GNU AGPL
 ## Docker
 
 Meguca can be deployed in a self-contained Docker container.
-Install [Docker](https://www.docker.com/) and
+
+First, run
+
+```
+git clone git://github.com/bakape/meguca.git
+```
+
+Second, navigate to the folder that was just created with
+
+```
+cd meguca
+```
+
+Then, install [Docker](https://www.docker.com/) and
 [Docker Compose](https://docs.docker.com/compose/install/) and run
 
 ```
@@ -24,6 +38,27 @@ docker-compose up -d
 ```
 
 For more information refer to the [Docker Compose docs](https://docs.docker.com/compose/reference/overview/).
+
+### Update
+
+If you ever want to update meguca to the newest version, stop the container with
+
+```
+docker-compose down
+```
+
+Then, pull the changes with
+
+```
+git pull origin
+```
+
+Finally, rebuild and start the container with
+
+```
+docker-compose build
+docker-compose up -d
+```
 
 ## Building from source
 
@@ -34,13 +69,13 @@ A reference list of commands can be found in `./docs/installation.md`
 
 #### Build dependencies
 
-* [Go](https://golang.org/doc/install) >=1.11 (for building server)
+* [Go](https://golang.org/doc/install) >=1.13 (for building server)
 * [Node.js](https://nodejs.org) >=5.0 (for building client)
 * C11 compiler
 * make
 * pkg-config
 * pthread
-* ffmpeg 3.2 / 4.1+ libraries (libavcodec, libavutil, libavformat, libswscale)
+* ffmpeg 3.2+ libraries (libavcodec, libavutil, libavformat, libswscale)
 compiled with:
     * libvpx
     * libvorbis
@@ -51,6 +86,18 @@ compiled with:
 * OpenCV >= 2
 * libgeoip
 * git
+
+NB: Ubuntu patches to ffmpeg on some Ubuntu versions break image processing.
+If running on Ubuntu, please compile from unmodified ffmpeg sources using:
+
+```
+sudo apt build-dep ffmpeg
+git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+cd ffmpeg
+git checkout n4.1
+./configure
+make -j`nproc`
+```
 
 #### Linux and OSX
 

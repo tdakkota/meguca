@@ -5,6 +5,7 @@ type Configs struct {
 	Public
 	PruneBoards         bool   `json:"pruneBoards"`
 	EmailErr            bool   `json:"emailErr"`
+	JPEGThumbnails      bool   `json:"JPEGThumbnails"`
 	MaxWidth            uint16 `json:"maxWidth"`
 	MaxHeight           uint16 `json:"maxHeight"`
 	BoardExpiry         uint   `json:"boardExpiry"`

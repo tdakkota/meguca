@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   meguca:
     build: .
@@ -12,7 +12,7 @@ services:
   postgres:
     image: postgres:11
     restart: always
-    shm_size: '256MB'
+    shm_size: "256MB"
     volumes:
       - db:/var/lib/postgresql/data
     environment:

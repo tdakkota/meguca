@@ -255,6 +255,7 @@ var specs = map[string][]inputSpec{
 		},
 		defaultThemeSpec,
 		{Type: _hr},
+		{ID: "JPEGThumbnails"},
 		{
 			ID:       "maxWidth",
 			Type:     _number,

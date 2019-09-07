@@ -7,7 +7,6 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
-	"net/http/pprof"
 	"regexp"
 	"strconv"
 	"time"
@@ -412,20 +411,11 @@ func moderatePosts(w http.ResponseWriter, r *http.Request,
 			return
 		}
 
-		ip, err := auth.GetIP(r)
-		if err != nil {
-			return
-		}
 		var session auth.Base64Token
 		err = session.EnsureCookie(w, r)
 		if err != nil {
 			return
 		}
-		db.IncrementSpamScore(
-			session,
-			ip,
-			config.Get().PostCreationScore*uint(len(ids)),
-		)
 		creds, err := isLoggedIn(w, r)
 		if err != nil {
 			return
@@ -889,18 +879,4 @@ func redirectByThread(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		httpError(w, r, err)
 	}
-}
-
-// Run profile and serve result
-func serverProfile(w http.ResponseWriter, r *http.Request) {
-	httpError(w, r, func() (err error) {
-		err = isAdmin(w, r)
-		if err != nil {
-			return
-		}
-
-		w.Header().Set("Cache-Control", "no-cache")
-		pprof.Handler(extractParam(r, "profile")).ServeHTTP(w, r)
-		return
-	}())
 }

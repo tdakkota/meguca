@@ -664,9 +664,7 @@ func TestInsertImageIntoPostWithImage(t *testing.T) {
 		time:     time.Now().Unix(),
 		hasImage: true,
 	}
-	if err := cl.insertImage(nil); err != errHasImage {
-		test.UnexpectedError(t, err)
-	}
+	AssertEquals(t, cl.insertImage(nil), nil)
 }
 
 func TestInsertImageOnTextOnlyBoard(t *testing.T) {
