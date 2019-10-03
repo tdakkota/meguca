@@ -87,8 +87,8 @@ compiled with:
 * libgeoip
 * git
 
-NB: Ubuntu patches to ffmpeg on some Ubuntu versions break image processing.
-If running on Ubuntu, please compile from unmodified ffmpeg sources using:
+NB: Ubuntu patches to ffmpeg on some Ubuntu versions <19.10 break image processing.
+In that case please compile from unmodified ffmpeg sources using:
 
 ```
 sudo apt build-dep ffmpeg
@@ -97,6 +97,7 @@ cd ffmpeg
 git checkout n4.1
 ./configure
 make -j`nproc`
+sudo make install
 ```
 
 #### Linux and OSX

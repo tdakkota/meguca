@@ -1441,6 +1441,14 @@ var migrations = []func(*pgx.Tx) error{
 				and val->>'rootURL' = 'http://localhost'`,
 		)
 	},
+	func(tx *sql.Tx) (err error) {
+		return execAll(tx,
+			`create table bitchute_videos (
+				id varchar(1000) primary key,
+				title varchar(1000) not null
+			)`,
+		)
+	},
 	func(tx *pgx.Tx) (err error) {
 		_, err = tx.Exec(
 			`alter table posts add column page int not null default 0`,

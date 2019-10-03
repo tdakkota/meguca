@@ -1,12 +1,8 @@
 github.com/Masterminds/squirrel v0.0.0-20190107164353-fa735ea14f09/go.mod h1:yaPeOnPG5ZRwL9oKdTsO/prlkPbXWZlRVMQ/gGlzIuA=
 github.com/Masterminds/squirrel v1.1.0 h1:baP1qLdoQCeTw3ifCdOq2dkYc6vGcmRdaociKLbEJXs=
 github.com/Masterminds/squirrel v1.1.0/go.mod h1:yaPeOnPG5ZRwL9oKdTsO/prlkPbXWZlRVMQ/gGlzIuA=
-github.com/PuerkitoBio/goquery v1.5.0 h1:uGvmFXOA73IKluu/F84Xd1tt/z07GYm8X49XKHP7EJk=
-github.com/PuerkitoBio/goquery v1.5.0/go.mod h1:qD2PgZ9lccMbQlc7eEOjaeRlFQON7xY8kdmcsrnKqMg=
 github.com/abh/geoip v0.0.0-20160510155516-07cea4480daa h1:o7+BnQZpdqHPCc9F2fTWPCM9Y9AyUHBWbTL+pCrCdb0=
 github.com/abh/geoip v0.0.0-20160510155516-07cea4480daa/go.mod h1:N2q9pP3q4thAewFqmOB/DL8EsWimMuDOx4KduwXMT5A=
-github.com/andybalholm/cascadia v1.0.0 h1:hOCXnnZ5A+3eVDX8pvgl4kofXv2ELss0bKcqRySc45o=
-github.com/andybalholm/cascadia v1.0.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/aquilax/tripcode v1.0.0 h1:uPW1T2brVth0t6YiDPlouncHXFGneflsAvkh4zEBN58=
 github.com/aquilax/tripcode v1.0.0/go.mod h1:Tucn/H6BM/DEmxzj/tnmR7Vs/NV/bgCKo8Wi0yXrtzQ=
 github.com/badoux/goscraper v0.0.0-20181207103713-9b4686c4b62c h1:eacIMsthlVgjQ8uKt1URXCSZ7lAQuXI5YGrutUVQQPo=
@@ -132,7 +128,6 @@ github.com/valyala/quicktemplate v1.0.2 h1:ZeVRKan1W/25u5f9ilDo5HWtdxD+QxR10WrZw
 github.com/valyala/quicktemplate v1.0.2/go.mod h1:KZAB+RlYlfNtBUGQMzIrnE8uuNgD2SbUn5CpZyod0sk=
 gitlab.com/nyarla/go-crypt v0.0.0-20160106005555-d9a5dc2b789b h1:7gd+rd8P3bqcn/96gOZa3F5dpJr/vEiDQYlNb/y2uNs=
 gitlab.com/nyarla/go-crypt v0.0.0-20160106005555-d9a5dc2b789b/go.mod h1:T3BPAOm2cqquPa0MKWeNkmOM5RQsRhkrwMWonFMN7fE=
-golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4 h1:HuIa8hRrWRSrqYzx1qI49NNxhdi2PrY7gxVSq1JjLDc=
