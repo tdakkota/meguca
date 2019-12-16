@@ -30,6 +30,10 @@ features = [
   "MessageEvent",
   "WebSocket",
   "Location",
+  "Navigator",
+  "EventTarget",
+  "AddEventListenerOptions",
+  "Event",
 ]
 
 [target."cfg(debug_assertions)".dependencies]
