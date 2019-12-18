@@ -3,18 +3,14 @@ mod fsm;
 mod state;
 mod util;
 
-use brunhild::*;
 use wasm_bindgen::prelude::*;
+use yew;
 
-#[wasm_bindgen(start)]
-pub fn main_js() -> Result<(), JsValue> {
+#[wasm_bindgen]
+pub fn run_app() -> Result<(), JsValue> {
 	console_error_panic_hook::set_once();
 
-	Node::text(&TextOptions {
-		text: "TESTO",
-		..Default::default()
-	})
-	.append_to(util::body().into())?;
+	// yew::start_app::<app::App>();
 
 	state::with(|s| {
 		connection::init(s);
